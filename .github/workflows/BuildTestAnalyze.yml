@@ -35,7 +35,7 @@ jobs:
 
               dotnet-sonarscanner begin `
                   /o:"northsouthsystems" `
-                  /k:"NorthSouthSystems_NorthSouthSystems.Search" `
+                  /k:"NorthSouthSystems_NorthSouthSystems.BitVectors.WAH" `
                   /v:$version `
                   /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml `
                   /d:sonar.dotnet.excludeTestProjects=true `

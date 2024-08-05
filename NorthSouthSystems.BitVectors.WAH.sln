@@ -8,36 +8,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{339096F8-0550-46
 		.gitignore = .gitignore
 		.github\workflows\BuildTestAnalyze.yml = .github\workflows\BuildTestAnalyze.yml
 		.github\workflows\BuildTestPackagePublish.yml = .github\workflows\BuildTestPackagePublish.yml
-		CodeAnalysis.CustomDictionary.xml = CodeAnalysis.CustomDictionary.xml
 		Directory.Build.props = Directory.Build.props
 		LICENSE = LICENSE
 		README.md = README.md
 		version.json = version.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.Search", "NorthSouthSystems.Search\NorthSouthSystems.Search.csproj", "{C7C9E27C-F8BC-4583-AF16-B01AD8A707FD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.Search.Test", "NorthSouthSystems.Search.Test\NorthSouthSystems.Search.Test.csproj", "{38D35FE0-1FD0-40CF-9E0F-DDDB63EAA61D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.Search.Benchmark", "NorthSouthSystems.Search.Benchmark\NorthSouthSystems.Search.Benchmark.csproj", "{589DDA5E-2A77-4788-9686-31E93AF2839E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH", "NorthSouthSystems.BitVectors.PLWAH\NorthSouthSystems.BitVectors.PLWAH.csproj", "{9AB2190B-4D53-4E05-9B71-27CE4FC02C9E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors", "NorthSouthSystems.BitVectors\NorthSouthSystems.BitVectors.csproj", "{97653F52-76C3-492B-9C2A-217E080B2EA6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.Test", "NorthSouthSystems.BitVectors.Test\NorthSouthSystems.BitVectors.Test.csproj", "{88742BA4-1E26-4A14-817F-CA0A92B367E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH", "NorthSouthSystems.BitVectors.WAH\NorthSouthSystems.BitVectors.WAH.csproj", "{1A142F66-4AC4-4516-943C-B429970D09AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH.Test", "NorthSouthSystems.BitVectors.PLWAH.Test\NorthSouthSystems.BitVectors.PLWAH.Test.csproj", "{F663C077-5562-4A69-9376-A91C0BACC7F6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BitVectors", "BitVectors", "{357E7510-49CF-4434-B79D-5F1EABAEEDB0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{BC2DCC21-7480-44C3-B490-A6C53176163D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConditionalCompilationDerivatives", "ConditionalCompilationDerivatives", "{357E7510-49CF-4434-B79D-5F1EABAEEDB0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH.Test", "NorthSouthSystems.BitVectors.WAH.Test\NorthSouthSystems.BitVectors.WAH.Test.csproj", "{22EB7BFA-A118-4677-A0D5-6DA6856AD33C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH64", "NorthSouthSystems.BitVectors.PLWAH64\NorthSouthSystems.BitVectors.PLWAH64.csproj", "{375CEBA5-3AAE-4C5F-B25E-88AB9DCFD932}"
 EndProject
@@ -53,30 +38,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C7C9E27C-F8BC-4583-AF16-B01AD8A707FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7C9E27C-F8BC-4583-AF16-B01AD8A707FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7C9E27C-F8BC-4583-AF16-B01AD8A707FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7C9E27C-F8BC-4583-AF16-B01AD8A707FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38D35FE0-1FD0-40CF-9E0F-DDDB63EAA61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38D35FE0-1FD0-40CF-9E0F-DDDB63EAA61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38D35FE0-1FD0-40CF-9E0F-DDDB63EAA61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38D35FE0-1FD0-40CF-9E0F-DDDB63EAA61D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{589DDA5E-2A77-4788-9686-31E93AF2839E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{589DDA5E-2A77-4788-9686-31E93AF2839E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{589DDA5E-2A77-4788-9686-31E93AF2839E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{589DDA5E-2A77-4788-9686-31E93AF2839E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9AB2190B-4D53-4E05-9B71-27CE4FC02C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9AB2190B-4D53-4E05-9B71-27CE4FC02C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB2190B-4D53-4E05-9B71-27CE4FC02C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB2190B-4D53-4E05-9B71-27CE4FC02C9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97653F52-76C3-492B-9C2A-217E080B2EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97653F52-76C3-492B-9C2A-217E080B2EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97653F52-76C3-492B-9C2A-217E080B2EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97653F52-76C3-492B-9C2A-217E080B2EA6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88742BA4-1E26-4A14-817F-CA0A92B367E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88742BA4-1E26-4A14-817F-CA0A92B367E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88742BA4-1E26-4A14-817F-CA0A92B367E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88742BA4-1E26-4A14-817F-CA0A92B367E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A142F66-4AC4-4516-943C-B429970D09AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A142F66-4AC4-4516-943C-B429970D09AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A142F66-4AC4-4516-943C-B429970D09AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -110,20 +75,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C7C9E27C-F8BC-4583-AF16-B01AD8A707FD} = {BC2DCC21-7480-44C3-B490-A6C53176163D}
-		{38D35FE0-1FD0-40CF-9E0F-DDDB63EAA61D} = {BC2DCC21-7480-44C3-B490-A6C53176163D}
-		{589DDA5E-2A77-4788-9686-31E93AF2839E} = {BC2DCC21-7480-44C3-B490-A6C53176163D}
-		{9AB2190B-4D53-4E05-9B71-27CE4FC02C9E} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
-		{97653F52-76C3-492B-9C2A-217E080B2EA6} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
-		{88742BA4-1E26-4A14-817F-CA0A92B367E0} = {CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35}
 		{1A142F66-4AC4-4516-943C-B429970D09AE} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
-		{F663C077-5562-4A69-9376-A91C0BACC7F6} = {CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35}
-		{22EB7BFA-A118-4677-A0D5-6DA6856AD33C} = {CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35}
-		{CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
+		{22EB7BFA-A118-4677-A0D5-6DA6856AD33C} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
 		{375CEBA5-3AAE-4C5F-B25E-88AB9DCFD932} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
 		{B3D6C6E6-63F9-4F5C-9E65-62FEB794D6AA} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
-		{D71D0531-5FD4-4715-87D8-1B112E2DDBA0} = {CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35}
-		{F8DE8848-88FD-48CB-BF12-2BFB428C2948} = {CFC7CC1E-9A44-4868-8615-E6E1FD8B4F35}
+		{D71D0531-5FD4-4715-87D8-1B112E2DDBA0} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
+		{F8DE8848-88FD-48CB-BF12-2BFB428C2948} = {357E7510-49CF-4434-B79D-5F1EABAEEDB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C99FD4A7-7B39-455F-B9C5-98D7A83551EA}
