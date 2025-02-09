@@ -20,12 +20,12 @@ internal static class VectorTestsRandom
         {
             foreach (var templateRight in templates)
             {
-                var resultLeft = new Vector(false, templateLeft.Item1);
-                var resultRight = new Vector(isCompressed, templateRight.Item1);
+                var resultLeft = new Vector(false, templateLeft.Vector);
+                var resultRight = new Vector(isCompressed, templateRight.Vector);
 
                 logic(resultLeft, resultRight);
 
-                resultLeft.AssertBitPositions(expectedBitPositionCalculator(templateLeft.Item2, templateRight.Item2));
+                resultLeft.AssertBitPositions(expectedBitPositionCalculator(templateLeft.BitPositions, templateRight.BitPositions));
             }
         }
     }
@@ -40,17 +40,17 @@ internal static class VectorTestsRandom
         {
             foreach (var templateRight in templates)
             {
-                var resultLeft = new Vector(leftIsCompressed, templateLeft.Item1);
-                var resultRight = new Vector(rightIsCompressed, templateRight.Item1);
+                var resultLeft = new Vector(leftIsCompressed, templateLeft.Vector);
+                var resultRight = new Vector(rightIsCompressed, templateRight.Vector);
 
                 var result = logic(resultLeft, resultRight);
 
-                result.AssertBitPositions(expectedBitPositionCalculator(templateLeft.Item2, templateRight.Item2));
+                result.AssertBitPositions(expectedBitPositionCalculator(templateLeft.BitPositions, templateRight.BitPositions));
             }
         }
     }
 
-    private static Tuple<Vector, int[]>[] GenerateRandomVectorsFavorCompression(int randomSeed, int maxBitPosition)
+    private static (Vector Vector, IReadOnlyList<int> BitPositions)[] GenerateRandomVectorsFavorCompression(int randomSeed, int maxBitPosition)
     {
         var random = new Random(randomSeed);
 
@@ -77,7 +77,7 @@ internal static class VectorTestsRandom
                 var vector = new Vector(false);
                 int[] bitPositions = vector.SetBitsRandom(maxBitPosition, count, true);
 
-                return Tuple.Create(vector, bitPositions);
+                return (vector, (IReadOnlyList<int>)bitPositions);
             })
             .ToArray();
     }
