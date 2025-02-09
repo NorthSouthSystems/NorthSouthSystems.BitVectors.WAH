@@ -54,7 +54,9 @@ internal static class VectorTestsRandom
     {
         var random = new Random(randomSeed);
 
-        return Enumerable.Range(1, maxBitPosition - 1)
+        // To set all bits to 1, count must == maxBitPosition + 1 because of position being 0-based.
+        // In order to include count == 0 in the enumerable, we must have maxBitPosition + 2 counts.
+        return Enumerable.Range(0, maxBitPosition + 2)
             .Where(count =>
             {
                 double fillFactor = (double)count / maxBitPosition;
