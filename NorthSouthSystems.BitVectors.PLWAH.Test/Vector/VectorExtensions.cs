@@ -46,8 +46,9 @@ internal static class VectorExtensions
         if (!vector.IsCompressed)
             vector.Bits.Reverse().SkipWhile(bit => !bit).Reverse().ToArray().Should().Equal(expectedBits);
 
+        // FluentAssertions in this loop had a noticible negative performance impact.
         foreach (int expectedBitPosition in expectedBitPositions)
-            vector[expectedBitPosition].Should().BeTrue();
+            Assert.True(vector[expectedBitPosition]);
 
         vector.Population.Should().Be(expectedBitPositions.Length);
         vector.PopulationAny.Should().Be(expectedBitPositions.Length > 0);
