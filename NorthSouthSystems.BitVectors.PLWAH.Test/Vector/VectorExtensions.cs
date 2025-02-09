@@ -41,10 +41,10 @@ internal static class VectorExtensions
         foreach (int expectedBitPosition in expectedBitPositions)
             expectedBits[expectedBitPosition] = true;
 
-        vector.GetBitPositions(true).ToArray().Should().Equal(expectedBitPositions);
+        vector.GetBitPositions(true).Should().Equal(expectedBitPositions);
 
         if (!vector.IsCompressed)
-            vector.Bits.Reverse().SkipWhile(bit => !bit).Reverse().ToArray().Should().Equal(expectedBits);
+            vector.Bits.Reverse().SkipWhile(bit => !bit).Reverse().Should().Equal(expectedBits);
 
         // FluentAssertions in this loop had a noticible negative performance impact.
         foreach (int expectedBitPosition in expectedBitPositions)
