@@ -64,7 +64,7 @@ internal static class VectorTestsRandom
                 // linear decreases from "both sides" when approaching count == 15 and 16 respectively. To further bias testing
                 // with Vectors having Words with compression, we square the favorability. To avoid starvation, we set a floor
                 // of 10% for all counts regardless of calculated favorability.
-                double fillFactor = (double)count / maxBitPosition;
+                double fillFactor = (double)count / (maxBitPosition + 1);
 
                 double favorability = Math.Abs(fillFactor - .5) / .5;
                 favorability = Math.Pow(favorability, 2);
