@@ -59,8 +59,16 @@ internal static class VectorTestsRandom
         return Enumerable.Range(0, maxBitPosition + 2)
             .Where(count =>
             {
+                // With Word.SIZE == 32 and maxBitPosition == 30 (the max on a single 32-bit WAH Word), the initial favorability
+                // calculation results in count == 0 and count == maxBitPosition + 1 both having a favorability == 1 with
+                // linear decreases from "both sides" when approaching count == 15 and 16 respectively. To further bias testing
+                // with Vectors having Words with compression, we square the favorability. To avoid starvation, we set a floor
+                // of 10% for all counts regardless of calculated favorability.
                 double fillFactor = (double)count / maxBitPosition;
+
                 double favorability = Math.Abs(fillFactor - .5) / .5;
+                favorability = Math.Pow(favorability, 2);
+                favorability = Math.Max(favorability, .1);
 
                 return random.NextDouble() <= favorability;
             })
