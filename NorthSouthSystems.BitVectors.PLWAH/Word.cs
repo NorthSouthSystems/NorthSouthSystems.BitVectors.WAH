@@ -55,7 +55,9 @@ internal struct Word
         if ((WordRawType)fillCount > FILLCOUNTMASK)
             throw new ArgumentOutOfRangeException(nameof(fillCount), fillCount, FormattableString.Invariant($"Must be <= FILLCOUNTMASK : 0x{FILLCOUNTMASK:X}."));
 
-        Raw = COMPRESSEDMASK | (fillBit ? FILLBITMASK : ZERO) | (WordRawType)fillCount;
+        var fillCountTyped = (WordRawType)fillCount;
+
+        Raw = COMPRESSEDMASK | (fillBit ? FILLBITMASK : ZERO) | fillCountTyped;
     }
 
     #endregion

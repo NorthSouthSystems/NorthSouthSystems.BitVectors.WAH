@@ -71,9 +71,9 @@ public class VectorTestsGetSetBits
     {
         // See comment above Vector.ThrowIfFillCountOverflow.
 
+#if POSITIONLISTENABLED
         Action act;
 
-#if POSITIONLISTENABLED
         act = () =>
         {
             var vector = new Vector(true);
@@ -93,6 +93,7 @@ public class VectorTestsGetSetBits
 #else
         // CS0220 - The operation overflows at compile time in checked mode
         /*
+        Action act;
         WordRawType bitPosition;
         
         act = () => bitPosition = (Word.FILLCOUNTMASK + 1) * (Word.SIZE - 1);
