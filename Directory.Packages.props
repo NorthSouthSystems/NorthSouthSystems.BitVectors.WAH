@@ -4,8 +4,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageVersion Include="NorthSouthSystems.BitVectors" Version="3.0.17-alpha" />
-        <PackageVersion Include="System.Buffers" Version="4.6.0" />
-        <PackageVersion Include="System.Memory" Version="4.6.0" />
+        <PackageVersion Include="NorthSouthSystems.BitVectors" Version="4.1.2-alpha" />
+        <PackageVersion Include="System.Buffers" Version="4.6.1" />
+        <PackageVersion Include="System.Memory" Version="4.6.3" />
     </ItemGroup>
 </Project>
