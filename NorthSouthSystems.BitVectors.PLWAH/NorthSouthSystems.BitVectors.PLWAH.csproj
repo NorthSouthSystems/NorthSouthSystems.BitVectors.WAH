@@ -9,7 +9,7 @@
     <ItemGroup>
         <PackageReference Include="NorthSouthSystems.BitVectors" />
         <PackageReference Include="System.Buffers" />
-        <PackageReference Include="System.Memory" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
+        <PackageReference Include="System.Memory" Condition=" '$(TargetFramework)' == 'netstandard2.0' " />
     </ItemGroup>
 
 </Project>

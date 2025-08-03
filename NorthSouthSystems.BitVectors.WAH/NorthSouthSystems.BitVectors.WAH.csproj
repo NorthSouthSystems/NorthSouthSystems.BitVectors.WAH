@@ -8,9 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="NorthSouthSystems.BitVectors" Version="3.0.17-alpha" />
-        <PackageReference Include="System.Buffers" Version="4.6.0" />
-        <PackageReference Include="System.Memory" Version="4.6.0" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
+        <PackageReference Include="NorthSouthSystems.BitVectors" />
+        <PackageReference Include="System.Buffers" />
+        <PackageReference Include="System.Memory" Condition=" '$(TargetFramework)' == 'netstandard2.0' " />
     </ItemGroup>
 
     <ItemGroup>
