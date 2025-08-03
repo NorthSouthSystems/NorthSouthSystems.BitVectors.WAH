@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Sdk Name="NorthSouthSystems.NET.Sdk" Version="1.1.5" />
-
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;net5.0</TargetFrameworks>
         <DefineConstants>POSITIONLISTENABLED;WORDSIZE64</DefineConstants>
