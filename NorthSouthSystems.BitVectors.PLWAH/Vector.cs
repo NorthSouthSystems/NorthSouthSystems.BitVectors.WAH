@@ -10,6 +10,7 @@ namespace NorthSouthSystems.BitVectors.WAH;
 
 using System.Buffers;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 /// <summary>
 /// Word-aligned hybrid bit vector.
@@ -23,12 +24,12 @@ public sealed partial class Vector : IBitVector<Vector>
     #region Construction
 
     public Vector(bool isCompressed)
-        : this(isCompressed, null) { }
+        : this(isCompressed, null, 0) { }
 
     public Vector(bool isCompressed, Vector vector)
         : this(isCompressed, vector, 0) { }
 
-    private Vector(bool isCompressed, Vector vector, int wordsLengthHint)
+    private Vector(bool isCompressed, Vector? vector, int wordsLengthHint)
     {
         IsCompressed = isCompressed;
 
@@ -112,12 +113,13 @@ public sealed partial class Vector : IBitVector<Vector>
         if (_words != null)
             ArrayPool<Word>.Shared.Return(_words);
 
-        _words = null;
+        _words = null!;
         WordsGrow(0);
         _wordCountPhysical = 1;
         _wordCountLogical = 1;
     }
 
+    [MemberNotNull(nameof(_words))]
     private void WordsGrow(int length)
     {
         length = Math.Max(length, 2);
