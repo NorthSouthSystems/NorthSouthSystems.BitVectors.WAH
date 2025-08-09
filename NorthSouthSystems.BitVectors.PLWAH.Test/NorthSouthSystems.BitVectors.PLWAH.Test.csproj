@@ -4,11 +4,7 @@
         <DefineConstants>POSITIONLISTENABLED</DefineConstants>
     </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-        <TargetFrameworks>net48;net9.0</TargetFrameworks>
-    </PropertyGroup>
-
-    <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+    <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
     </PropertyGroup>
 

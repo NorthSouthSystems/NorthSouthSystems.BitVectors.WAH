@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net5.0</TargetFrameworks>
+        <TargetFramework>net8.0</TargetFramework>
         <DefineConstants>POSITIONLISTENABLED</DefineConstants>
         <Description>These .NET libraries contain compressed bit vector data structures using the "Word Aligned Hybrid" scheme and its "Position List" variant.</Description>
     </PropertyGroup>
@@ -9,7 +9,6 @@
     <ItemGroup>
         <PackageReference Include="NorthSouthSystems.BitVectors" />
         <PackageReference Include="System.Buffers" />
-        <PackageReference Include="System.Memory" Condition=" '$(TargetFramework)' == 'netstandard2.0' " />
     </ItemGroup>
 
 </Project>
