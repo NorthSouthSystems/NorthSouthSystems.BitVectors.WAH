@@ -27,12 +27,6 @@
         "resolved": "3.7.115",
         "contentHash": "EpXamaAdRfG/BMxGgvZlTM0npRnkmXUjAj8OdNKd17t4oN+2nvjdv/KnFmzOOMDqvlwB49UCwtOHJrAQTfUBtQ=="
       },
-      "NorthSouthSystems.NET.Sdk": {
-        "type": "Direct",
-        "requested": "[3.1.4, )",
-        "resolved": "3.1.4",
-        "contentHash": "1C04D64jv6V1egj15dWLJTYXxyUJTXvx6lJYECPFU/fTjG4q35JAFlDDfgT5+PlXz2Lne1Y0kav8Protfy6bXw=="
-      },
       "xunit": {
         "type": "Direct",
         "requested": "[2.9.3, )",
@@ -182,15 +176,15 @@
       "northsouthsystems.bitvectors.plwah64": {
         "type": "Project",
         "dependencies": {
-          "NorthSouthSystems.BitVectors": "[5.0.1-alpha, )",
+          "NorthSouthSystems.BitVectors": "[6.0.1-alpha, )",
           "System.Buffers": "[4.6.1, )"
         }
       },
       "NorthSouthSystems.BitVectors": {
         "type": "CentralTransitive",
-        "requested": "[5.0.1-alpha, )",
-        "resolved": "5.0.1-alpha",
-        "contentHash": "fRkxfvUE+1Eg+ci936PwKVxR9+ZU/T5m3y4xTrIHpR5UeZhqWCO5DR1wJvx+ISXtCheBePnVII1ybuZ9ly/s/Q=="
+        "requested": "[6.0.1-alpha, )",
+        "resolved": "6.0.1-alpha",
+        "contentHash": "xCtyKjZtrSSLLEs+UpNsSqSUF/N0Pb2ranuOgQfEszVJFHGalQXUcXWOJB0BZL9st61MhG5K8wdbB2YWzPkOSQ=="
       },
       "System.Buffers": {
         "type": "CentralTransitive",
