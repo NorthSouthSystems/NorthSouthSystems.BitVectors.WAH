@@ -30,15 +30,19 @@ jobs:
           
         - run: dotnet test --no-build --configuration Release --verbosity normal
   
-        - run: dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.PLWAH/NorthSouthSystems.BitVectors.PLWAH.csproj
-        - run: dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.PLWAH64/NorthSouthSystems.BitVectors.PLWAH64.csproj
-        - run: dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.WAH/NorthSouthSystems.BitVectors.WAH.csproj
-        - run: dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.WAH64/NorthSouthSystems.BitVectors.WAH64.csproj
+        - run: |
+              dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.PLWAH/NorthSouthSystems.BitVectors.PLWAH.csproj
+              dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.PLWAH64/NorthSouthSystems.BitVectors.PLWAH64.csproj
+              dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.WAH/NorthSouthSystems.BitVectors.WAH.csproj
+              dotnet pack --no-build --configuration Release NorthSouthSystems.BitVectors.WAH64/NorthSouthSystems.BitVectors.WAH64.csproj
   
-        - run: dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_APIKEY}} "NorthSouthSystems.BitVectors.PLWAH/bin/Release/*.nupkg"
-        - run: dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_APIKEY}} "NorthSouthSystems.BitVectors.PLWAH64/bin/Release/*.nupkg"
-        - run: dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_APIKEY}} "NorthSouthSystems.BitVectors.WAH/bin/Release/*.nupkg"
-        - run: dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_APIKEY}} "NorthSouthSystems.BitVectors.WAH64/bin/Release/*.nupkg"
+        - env:
+              NUGET_APIKEY: ${{ secrets.NUGET_APIKEY }}
+          run: |
+              dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key "$NUGET_APIKEY" "NorthSouthSystems.BitVectors.PLWAH/bin/Release/*.nupkg"
+              dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key "$NUGET_APIKEY" "NorthSouthSystems.BitVectors.PLWAH64/bin/Release/*.nupkg"
+              dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key "$NUGET_APIKEY" "NorthSouthSystems.BitVectors.WAH/bin/Release/*.nupkg"
+              dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key "$NUGET_APIKEY" "NorthSouthSystems.BitVectors.WAH64/bin/Release/*.nupkg"
   
         - uses: actions/github-script@v7
           with:
