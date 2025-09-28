@@ -1,11 +1,11 @@
 ﻿#if POSITIONLISTENABLED && WORDSIZE64
-namespace NorthSouthSystems.BitVectors.PLWAH64;
+using NorthSouthSystems.BitVectors.PLWAH64;
 #elif POSITIONLISTENABLED
-namespace NorthSouthSystems.BitVectors.PLWAH;
+using NorthSouthSystems.BitVectors.PLWAH;
 #elif WORDSIZE64
-namespace NorthSouthSystems.BitVectors.WAH64;
+using NorthSouthSystems.BitVectors.WAH64;
 #else
-namespace NorthSouthSystems.BitVectors.WAH;
+using NorthSouthSystems.BitVectors.WAH;
 #endif
 
 public class VectorTestsOrInPlace
