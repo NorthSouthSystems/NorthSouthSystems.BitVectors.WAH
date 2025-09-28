@@ -10,7 +10,7 @@ using NorthSouthSystems.BitVectors.WAH;
 
 using System.Reflection;
 
-internal static class VectorExtensions
+internal static class T_VectorExtensionsForTests
 {
     #region Assert
 

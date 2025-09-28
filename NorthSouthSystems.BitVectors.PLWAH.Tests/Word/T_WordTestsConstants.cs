@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class WordTestsConstants
+public class T_Word_Constants
 {
     [Fact]
     public void Constants()

@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class VectorTestsAndOutOfPlace
+public class T_Vector_AndOutOfPlace
 {
     [Theory]
     [InlineData(false, false, false)]
@@ -23,7 +23,7 @@ public class VectorTestsAndOutOfPlace
     {
         const int randomSeed = 22;
 
-        VectorTestsRandom.LogicOutOfPlaceBase(randomSeed, (Word.SIZE - 1) * WordExtensions.WORDCOUNTFORRANDOMTESTS + 1,
+        T_VectorHelpersForRandomTests.LogicOutOfPlaceBase(randomSeed, (Word.SIZE - 1) * T_WordExtensionsForTests.WORDCOUNTFORRANDOMTESTS + 1,
             leftIsCompressed, rightIsCompressed,
             (left, right) => left.AndOutOfPlace(right, resultIsCompressed),
             Enumerable.Intersect);

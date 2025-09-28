@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class VectorTestsOrOutOfPlace
+public class T_Vector_OrOutOfPlace
 {
     [Theory]
     [InlineData(false, false, false)]

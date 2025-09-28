@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class WordTestsPopulation
+public class T_Word_Population
 {
     [Fact]
     public void NotCompressed()
@@ -62,7 +62,7 @@ public class WordTestsPopulation
         foreach (bool fillBit in new bool[] { false, true })
         {
             // This is only "full coverage" (it's psuedo anyways) when !WORDSIZE64.
-            for (int i = 0; i >= 0 && i <= (int)Math.Min(Word.FILLCOUNTMASK, int.MaxValue); i += WordExtensions.LARGEPRIME)
+            for (int i = 0; i >= 0 && i <= (int)Math.Min(Word.FILLCOUNTMASK, int.MaxValue); i += T_WordExtensionsForTests.LARGEPRIME)
             {
                 var word = new Word(fillBit, i);
                 word.Population.Should().Be(fillBit ? ((Word.SIZE - 1) * i) : 0, because: word.ToString());

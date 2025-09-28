@@ -10,7 +10,7 @@ using NorthSouthSystems.BitVectors.WAH;
 
 using System.Reflection;
 
-public class VectorTestsConstruction
+public class T_Vector_Construction
 {
     [Fact]
     public void ConstructCopy()

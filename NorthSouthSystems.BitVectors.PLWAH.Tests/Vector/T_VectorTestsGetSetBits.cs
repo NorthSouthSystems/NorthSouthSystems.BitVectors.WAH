@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class VectorTestsGetSetBits
+public class T_Vector_GetSetBits
 {
     [Theory]
     [InlineData(false)]

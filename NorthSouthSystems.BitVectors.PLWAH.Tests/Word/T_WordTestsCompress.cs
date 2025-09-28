@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class WordTestsCompress
+public class T_Word_Compress
 {
     [Fact]
     public void Compressible()
@@ -52,7 +52,7 @@ public class WordTestsCompress
     [Fact]
     public void NotCompressibleFullCoverage()
     {
-        for (WordRawType i = Word.ONE; i < Word.COMPRESSIBLEMASK; i += WordExtensions.LARGEPRIME32ORFULLCOVERAGE64)
+        for (WordRawType i = Word.ONE; i < Word.COMPRESSIBLEMASK; i += T_WordExtensionsForTests.LARGEPRIME32ORFULLCOVERAGE64)
         {
             var word = new Word(i);
             word.Compress();
@@ -65,7 +65,7 @@ public class WordTestsCompress
     [Fact]
     public void CompressedFullCoverage()
     {
-        for (WordRawType i = Word.COMPRESSEDMASK; i > Word.COMPRESSEDMASK && i <= WordRawType.MaxValue; i += WordExtensions.LARGEPRIME32ORFULLCOVERAGE64)
+        for (WordRawType i = Word.COMPRESSEDMASK; i > Word.COMPRESSEDMASK && i <= WordRawType.MaxValue; i += T_WordExtensionsForTests.LARGEPRIME32ORFULLCOVERAGE64)
         {
             var word = new Word(i);
             word.Compress();

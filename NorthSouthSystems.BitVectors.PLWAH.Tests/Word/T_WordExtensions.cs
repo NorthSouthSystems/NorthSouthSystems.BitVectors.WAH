@@ -14,7 +14,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-internal static class WordExtensions
+internal static class T_WordExtensionsForTests
 {
     internal const int LARGEPRIME = 9973;
 

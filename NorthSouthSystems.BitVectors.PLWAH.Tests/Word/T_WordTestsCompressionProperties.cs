@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class WordTestsCompressionProperties
+public class T_Word_CompressionProperties
 {
     [Fact]
     public void IsCompressibleTrue()
@@ -44,7 +44,7 @@ public class WordTestsCompressionProperties
     [Fact]
     public void IsCompressibleFalseFullCoverage()
     {
-        for (WordRawType i = Word.ONE; i < Word.COMPRESSIBLEMASK; i += WordExtensions.LARGEPRIME32ORFULLCOVERAGE64)
+        for (WordRawType i = Word.ONE; i < Word.COMPRESSIBLEMASK; i += T_WordExtensionsForTests.LARGEPRIME32ORFULLCOVERAGE64)
         {
             var word = new Word(i);
             word.IsCompressible.Should().BeFalse();
@@ -85,7 +85,7 @@ public class WordTestsCompressionProperties
         foreach (bool fillBit in new bool[] { false, true })
         {
             // This is only "full coverage" (it's psuedo anyways) when !WORDSIZE64.
-            for (int i = 0; i >= 0 && i <= (int)Math.Min(Word.FILLCOUNTMASK, int.MaxValue); i += WordExtensions.LARGEPRIME)
+            for (int i = 0; i >= 0 && i <= (int)Math.Min(Word.FILLCOUNTMASK, int.MaxValue); i += T_WordExtensionsForTests.LARGEPRIME)
             {
                 var word = new Word(fillBit, i);
                 word.Raw.Should().Be(Word.COMPRESSEDMASK + (fillBit ? Word.FILLBITMASK : Word.ZERO) + (WordRawType)i);

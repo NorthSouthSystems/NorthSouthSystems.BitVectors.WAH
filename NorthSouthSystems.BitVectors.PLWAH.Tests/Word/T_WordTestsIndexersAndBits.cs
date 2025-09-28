@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class WordTestsIndexersAndBits
+public class T_Word_IndexersAndBits
 {
     [Fact]
     public void GetSetPositionsSimple()

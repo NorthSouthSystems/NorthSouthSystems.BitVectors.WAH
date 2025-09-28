@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class VectorTestsGetSetWord
+public class T_Vector_GetSetWord
 {
     [Fact]
     public void Uncompressed()

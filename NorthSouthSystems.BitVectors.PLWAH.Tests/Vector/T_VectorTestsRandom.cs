@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-internal static class VectorTestsRandom
+internal static class T_VectorHelpersForRandomTests
 {
     internal static void LogicInPlaceBase(int randomSeed, int maxBitPosition,
         bool isCompressed,

@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class VectorTestsAndPopulation
+public class T_Vector_AndPopulation
 {
     [Theory]
     [InlineData(false, false)]

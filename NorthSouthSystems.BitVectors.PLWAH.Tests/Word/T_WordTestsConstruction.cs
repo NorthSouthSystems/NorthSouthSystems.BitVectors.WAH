@@ -8,7 +8,7 @@ using NorthSouthSystems.BitVectors.WAH64;
 using NorthSouthSystems.BitVectors.WAH;
 #endif
 
-public class WordTestsConstruction
+public class T_Word_Construction
 {
     [Fact]
     public void Bounds()
