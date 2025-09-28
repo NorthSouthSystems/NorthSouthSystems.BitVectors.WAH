@@ -20,19 +20,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVector
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH", "NorthSouthSystems.BitVectors.WAH\NorthSouthSystems.BitVectors.WAH.csproj", "{1A142F66-4AC4-4516-943C-B429970D09AE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH.Test", "NorthSouthSystems.BitVectors.PLWAH.Test\NorthSouthSystems.BitVectors.PLWAH.Test.csproj", "{F663C077-5562-4A69-9376-A91C0BACC7F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH.Tests", "NorthSouthSystems.BitVectors.PLWAH.Tests\NorthSouthSystems.BitVectors.PLWAH.Tests.csproj", "{F663C077-5562-4A69-9376-A91C0BACC7F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConditionalCompilationDerivatives", "ConditionalCompilationDerivatives", "{357E7510-49CF-4434-B79D-5F1EABAEEDB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH.Test", "NorthSouthSystems.BitVectors.WAH.Test\NorthSouthSystems.BitVectors.WAH.Test.csproj", "{22EB7BFA-A118-4677-A0D5-6DA6856AD33C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH.Tests", "NorthSouthSystems.BitVectors.WAH.Tests\NorthSouthSystems.BitVectors.WAH.Tests.csproj", "{22EB7BFA-A118-4677-A0D5-6DA6856AD33C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH64", "NorthSouthSystems.BitVectors.PLWAH64\NorthSouthSystems.BitVectors.PLWAH64.csproj", "{375CEBA5-3AAE-4C5F-B25E-88AB9DCFD932}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH64", "NorthSouthSystems.BitVectors.WAH64\NorthSouthSystems.BitVectors.WAH64.csproj", "{B3D6C6E6-63F9-4F5C-9E65-62FEB794D6AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH64.Test", "NorthSouthSystems.BitVectors.PLWAH64.Test\NorthSouthSystems.BitVectors.PLWAH64.Test.csproj", "{D71D0531-5FD4-4715-87D8-1B112E2DDBA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.PLWAH64.Tests", "NorthSouthSystems.BitVectors.PLWAH64.Tests\NorthSouthSystems.BitVectors.PLWAH64.Tests.csproj", "{D71D0531-5FD4-4715-87D8-1B112E2DDBA0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH64.Test", "NorthSouthSystems.BitVectors.WAH64.Test\NorthSouthSystems.BitVectors.WAH64.Test.csproj", "{F8DE8848-88FD-48CB-BF12-2BFB428C2948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.BitVectors.WAH64.Tests", "NorthSouthSystems.BitVectors.WAH64.Tests\NorthSouthSystems.BitVectors.WAH64.Tests.csproj", "{F8DE8848-88FD-48CB-BF12-2BFB428C2948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

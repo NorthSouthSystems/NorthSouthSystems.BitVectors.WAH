@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DefineConstants>WORDSIZE64</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorExtensions.cs" Link="Vector\T_VectorExtensions.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsAndInPlace.cs" Link="Vector\T_VectorTestsAndInPlace.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsAndOutOfPlace.cs" Link="Vector\T_VectorTestsAndOutOfPlace.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsAndPopulation.cs" Link="Vector\T_VectorTestsAndPopulation.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsConstruction.cs" Link="Vector\T_VectorTestsConstruction.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsGetSetBits.cs" Link="Vector\T_VectorTestsGetSetBits.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsGetSetWord.cs" Link="Vector\T_VectorTestsGetSetWord.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsOrInPlace.cs" Link="Vector\T_VectorTestsOrInPlace.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsOrOutOfPlace.cs" Link="Vector\T_VectorTestsOrOutOfPlace.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Vector\T_VectorTestsRandom.cs" Link="Vector\T_VectorTestsRandom.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Word\T_WordExtensions.cs" Link="Word\T_WordExtensions.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Word\T_WordTestsCompress.cs" Link="Word\T_WordTestsCompress.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Word\T_WordTestsCompressionProperties.cs" Link="Word\T_WordTestsCompressionProperties.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Word\T_WordTestsConstruction.cs" Link="Word\T_WordTestsConstruction.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Word\T_WordTestsIndexersAndBits.cs" Link="Word\T_WordTestsIndexersAndBits.cs" />
+        <Compile Include="..\NorthSouthSystems.BitVectors.PLWAH.Tests\Word\T_WordTestsPopulation.cs" Link="Word\T_WordTestsPopulation.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\NorthSouthSystems.BitVectors.WAH64\NorthSouthSystems.BitVectors.WAH64.csproj" />
+    </ItemGroup>
+
+</Project>
